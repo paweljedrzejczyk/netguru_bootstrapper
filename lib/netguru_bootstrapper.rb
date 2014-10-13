@@ -1,5 +1,5 @@
-require "netguru_bootstrapper/version"
+require 'netguru_bootstrapper/version'
 
 module NetguruBootstrapper
-  # Your code goes here...
+  require 'netguru_bootstrapper/engine' if defined?(Rails)
 end
