@@ -1,0 +1,19 @@
+directories:
+- settings
+- utilities
+- components
+- controllers
+- settings/bootstrap-overrides
+
+files:
+  settings:
+  - bootstrap-variables
+  - bootstrap-components
+  - bootstrap-overrides
+  - custom-variables
+  - z-index-variables
+  utilities:
+  - functions
+  - mixins
+  - shared
+  - typography
