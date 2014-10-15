@@ -1,4 +1,5 @@
 require 'rails/generators'
+require 'netguru_bootstrapper/structure_parser'
 
 module NetguruBootstrapper
   module Generators
@@ -6,31 +7,31 @@ module NetguruBootstrapper
       desc 'Bootstrap CSS generator'
       source_root File.expand_path('../../templates', __FILE__)
 
-      def create_directories
-        %w( components controllers settings settings/bootstrap-overrides
-            utilities ).each do |dir|
-          empty_directory "app/assets/stylesheets/#{dir}"
-          create_file "app/assets/stylesheets/#{dir}/.gitkeep"
-        end
-      end
-
-      def create_application_file
+      def create_root_file
         template 'application.scss', "#{base_path}/application.scss"
       end
 
-      def create_utilities_files
-        %w( functions mixins shared typography ).each do |file|
-          template "utilities/#{file}.scss", "#{base_path}/utilities/#{file}.scss"
-        end
-      end
-
-      def create_settings_files
-        %w( custom-variables z-index-variables ).each do |file|
-          template "settings/#{file}.scss", "#{base_path}/settings/#{file}.scss"
+      def create_directories
+        structure.directories.each do |dir|
+          empty_directory "#{base_path}/#{dir}"
+          create_files(dir, structure.files[dir])
         end
       end
 
       private
+
+      def structure
+        StructureParser.new
+      end
+
+      def create_files(dir, files)
+        return create_file "#{base_path}/#{dir}/.gitkeep" if files.nil?
+        files.each { |file| copy_template(dir, file) }
+      end
+
+      def copy_template(dir, file)
+        template "#{dir}/#{file}.scss", "#{base_path}/#{dir}/#{file}.scss"
+      end
 
       def base_path
         'app/assets/stylesheets'
