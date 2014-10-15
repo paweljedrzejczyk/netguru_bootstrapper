@@ -8,9 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = NetguruBootstrapper::VERSION
   spec.authors       = ["Mateusz Czajka"]
   spec.email         = ["mat.czajka@gmail.com"]
-  spec.summary       = %q{Write a short summary. Required.}
-  spec.description   = %q{Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = 'Twitter Bootstrap generator for Rails'
+  spec.homepage      = 'https://github.com/netguru/netguru_bootstrapper'
   spec.license       = "MIT"
 
   spec.files         = `git ls-files`.split($/)
