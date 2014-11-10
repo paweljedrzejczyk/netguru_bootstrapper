@@ -7,14 +7,14 @@ directories:
 
 files:
   settings:
-  - bootstrap-variables
-  - bootstrap-components
-  - bootstrap-overrides
-  - custom-variables
-  - z-index-variables
-  - breakpoint-variables
+  - _bootstrap-variables
+  - _bootstrap-components
+  - _bootstrap-overrides
+  - _custom-variables
+  - _z-index-variables
+  - _breakpoint-variables
   utilities:
-  - functions
-  - mixins
-  - shared
-  - typography
+  - _functions
+  - _mixins
+  - _shared
+  - _typography
