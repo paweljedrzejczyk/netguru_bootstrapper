@@ -14,6 +14,12 @@ And then execute:
 $ bundle
 ```
 
+Please note that this gem is designed to work with [Bootstrap for Sass](https://github.com/twbs/bootstrap-sass) gem, so you should add:
+```
+gem 'bootstrap-sass'
+```
+to your application's Gemfile as well.
+
 ## Usage
 ```
 $ rails g netguru_bootstrapper:bootstrap
