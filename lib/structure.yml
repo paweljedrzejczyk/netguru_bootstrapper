@@ -12,6 +12,7 @@ files:
   - bootstrap-overrides
   - custom-variables
   - z-index-variables
+  - breakpoint-variables
   utilities:
   - functions
   - mixins
