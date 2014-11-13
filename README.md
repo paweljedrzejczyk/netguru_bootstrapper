@@ -42,6 +42,7 @@ $ rails g netguru_bootstrapper:bootstrap
 │   ├── _bootstrap-variables.scss
 │   ├── _breakpoint-variables.scss
 │   ├── _custom-variables.scss
+│   ├── _z-index-variables.scss
 │   └── bootstrap-overrides
 │       └── _bootstrap-overrides-go-here.scss
 └── utilities
