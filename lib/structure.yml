@@ -2,15 +2,17 @@ directories:
 - settings
 - utilities
 - components
-- controllers
-- settings/bootstrap-overrides
+- views
+- framework
+- framework/overrides
 
 files:
+  framework:
+  - _variables
+  - _components
+  - _overrides
   settings:
-  - _bootstrap-variables
-  - _bootstrap-components
-  - _bootstrap-overrides
-  - _custom-variables
+  - _variables
   - _z-index-variables
   - _breakpoint-variables
   utilities:
