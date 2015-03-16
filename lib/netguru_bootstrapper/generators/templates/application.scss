@@ -1,10 +1,10 @@
 @import 'bootstrap-sprockets';
 
 @import 'settings/z-index-variables';
-@import 'settings/custom-variables';
-@import 'settings/bootstrap-variables';
+@import 'settings/variables';
+@import 'framework/variables';
 
-@import 'settings/bootstrap-components';
+@import 'framework/components';
 
 @import 'settings/breakpoint-variables';
 
@@ -13,4 +13,4 @@
 @import 'utilities/shared';
 @import 'utilities/typography';
 
-@import 'settings/bootstrap-overrides';
+@import 'framework/overrides';
