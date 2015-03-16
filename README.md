@@ -34,17 +34,18 @@ $ rails g netguru_bootstrapper:bootstrap
 ├── application.scss
 ├── components
 │   └── _your-custom-components-go-here.scss
-├── controllers
-│   └── _your-controller-based-styles-go-here.scss
+├── views
+│   └── _your-view-based-styles-go-here.scss
+├── framework
+│   ├── _components.scss
+│   ├── _overrides.scss
+│   ├── _variables.scss
+│   └── overrides
+│       └── _framework-overrides-go-here.scss
 ├── settings
-│   ├── _bootstrap-components.scss
-│   ├── _bootstrap-overrides.scss
-│   ├── _bootstrap-variables.scss
-│   ├── _breakpoint-variables.scss
-│   ├── _custom-variables.scss
 │   ├── _z-index-variables.scss
-│   └── bootstrap-overrides
-│       └── _bootstrap-overrides-go-here.scss
+│   ├── _breakpoint-variables.scss
+│   └── _variables.scss
 └── utilities
     ├── _functions.scss
     ├── _mixins.scss
@@ -54,10 +55,10 @@ $ rails g netguru_bootstrapper:bootstrap
 
 ### Important files
 
-#### <code>settings/bootstrap-components.scss</code>
+#### <code>framework/_components.scss</code>
 This file is a copy of [bootstrap.scss](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/_bootstrap.scss) file from [bootstrap-sass](https://github.com/twbs/bootstrap-sass) gem. You can comment out components that you're not going to use.
 
-#### <code>settings/bootstrap-variables.scss</code>
+#### <code>framework/_variables.scss</code>
 Copy of [bootstrap/variables.scss](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss). To override variable simply uncomment line and remove <code>!default</code> flag.
 
 For example:
@@ -70,7 +71,7 @@ Becomes:
 $font-size-base: 16px;
 ```
 
-#### <code>settings/bootstrap-overrides.scss</code>
+#### <code>framework/_overrides.scss</code>
 
 Similar to Boostrap Components - all overrides are commented out by default. After uncommenting an override you need to add proper file to <code>settings/bootstrap-overrides</code> directory.
 
