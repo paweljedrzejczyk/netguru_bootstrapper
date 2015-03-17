@@ -73,7 +73,7 @@ $font-size-base: 16px;
 
 #### <code>framework/_overrides.scss</code>
 
-Similar to Boostrap Components - all overrides are commented out by default. After uncommenting an override you need to add proper file to <code>settings/bootstrap-overrides</code> directory.
+Similar to Boostrap Components - all overrides are commented out by default. After uncommenting an override you need to add proper file to <code>framework/overrides</code> directory.
 
 
 ## Contributing
