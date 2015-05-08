@@ -1,4 +1,5 @@
 require 'yaml'
+require 'ostruct'
 
 module NetguruBootstrapper
   class StructureParser < OpenStruct
