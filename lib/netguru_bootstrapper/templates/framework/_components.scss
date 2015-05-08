@@ -2,52 +2,52 @@
 // https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/_bootstrap.scss
 
 // Core variables and mixins
-@import "bootstrap/variables";
-@import "bootstrap/mixins";
+@import "<%= options[:bootstrap_path] %>/variables";
+@import "<%= options[:bootstrap_path] %>/mixins";
 
 // Reset and dependencies
-@import "bootstrap/normalize";
-@import "bootstrap/print";
-@import "bootstrap/glyphicons";
+@import "<%= options[:bootstrap_path] %>/normalize";
+@import "<%= options[:bootstrap_path] %>/print";
+@import "<%= options[:bootstrap_path] %>/glyphicons";
 
 // Core CSS
-@import "bootstrap/scaffolding";
-@import "bootstrap/type";
-@import "bootstrap/code";
-@import "bootstrap/grid";
-@import "bootstrap/tables";
-@import "bootstrap/forms";
-@import "bootstrap/buttons";
+@import "<%= options[:bootstrap_path] %>/scaffolding";
+@import "<%= options[:bootstrap_path] %>/type";
+@import "<%= options[:bootstrap_path] %>/code";
+@import "<%= options[:bootstrap_path] %>/grid";
+@import "<%= options[:bootstrap_path] %>/tables";
+@import "<%= options[:bootstrap_path] %>/forms";
+@import "<%= options[:bootstrap_path] %>/buttons";
 
 // Components
-@import "bootstrap/component-animations";
-@import "bootstrap/dropdowns";
-@import "bootstrap/button-groups";
-@import "bootstrap/input-groups";
-@import "bootstrap/navs";
-@import "bootstrap/navbar";
-@import "bootstrap/breadcrumbs";
-@import "bootstrap/pagination";
-@import "bootstrap/pager";
-@import "bootstrap/labels";
-@import "bootstrap/badges";
-@import "bootstrap/jumbotron";
-@import "bootstrap/thumbnails";
-@import "bootstrap/alerts";
-@import "bootstrap/progress-bars";
-@import "bootstrap/media";
-@import "bootstrap/list-group";
-@import "bootstrap/panels";
-@import "bootstrap/responsive-embed";
-@import "bootstrap/wells";
-@import "bootstrap/close";
+@import "<%= options[:bootstrap_path] %>/component-animations";
+@import "<%= options[:bootstrap_path] %>/dropdowns";
+@import "<%= options[:bootstrap_path] %>/button-groups";
+@import "<%= options[:bootstrap_path] %>/input-groups";
+@import "<%= options[:bootstrap_path] %>/navs";
+@import "<%= options[:bootstrap_path] %>/navbar";
+@import "<%= options[:bootstrap_path] %>/breadcrumbs";
+@import "<%= options[:bootstrap_path] %>/pagination";
+@import "<%= options[:bootstrap_path] %>/pager";
+@import "<%= options[:bootstrap_path] %>/labels";
+@import "<%= options[:bootstrap_path] %>/badges";
+@import "<%= options[:bootstrap_path] %>/jumbotron";
+@import "<%= options[:bootstrap_path] %>/thumbnails";
+@import "<%= options[:bootstrap_path] %>/alerts";
+@import "<%= options[:bootstrap_path] %>/progress-bars";
+@import "<%= options[:bootstrap_path] %>/media";
+@import "<%= options[:bootstrap_path] %>/list-group";
+@import "<%= options[:bootstrap_path] %>/panels";
+@import "<%= options[:bootstrap_path] %>/responsive-embed";
+@import "<%= options[:bootstrap_path] %>/wells";
+@import "<%= options[:bootstrap_path] %>/close";
 
 // Components w/ JavaScript
-@import "bootstrap/modals";
-@import "bootstrap/tooltip";
-@import "bootstrap/popovers";
-@import "bootstrap/carousel";
+@import "<%= options[:bootstrap_path] %>/modals";
+@import "<%= options[:bootstrap_path] %>/tooltip";
+@import "<%= options[:bootstrap_path] %>/popovers";
+@import "<%= options[:bootstrap_path] %>/carousel";
 
 // Utility classes
-@import "bootstrap/utilities";
-@import "bootstrap/responsive-utilities";
+@import "<%= options[:bootstrap_path] %>/utilities";
+@import "<%= options[:bootstrap_path] %>/responsive-utilities";

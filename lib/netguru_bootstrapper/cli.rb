@@ -7,6 +7,7 @@ module NetguruBootstrapper
 
     desc "install", "Generate tree structure"
     option :path
+    option :bootstrap_path
 
     def install
       say 'Generating tree structure...', :blue

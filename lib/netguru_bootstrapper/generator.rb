@@ -6,6 +6,7 @@ module NetguruBootstrapper
     include Thor::Actions
 
     class_option :path
+    class_option :bootstrap_path, default: 'bootstrap'
 
     def self.source_root
       File.expand_path('../templates', __FILE__)
