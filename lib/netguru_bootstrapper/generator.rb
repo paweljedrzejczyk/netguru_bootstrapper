@@ -2,14 +2,17 @@ require 'thor'
 require_relative './structure_parser'
 
 module NetguruBootstrapper
-  class Generator < ::Thor::Group
+  class Generator < Thor::Group
     include Thor::Actions
+
+    class_option :path
 
     def self.source_root
       File.expand_path('../templates', __FILE__)
     end
 
     def create_root_file
+      say "Using #{base_path} as root directory", :blue
       template 'application.scss', "#{base_path}/application.scss"
     end
 
@@ -36,7 +39,7 @@ module NetguruBootstrapper
     end
 
     def base_path
-      default_assets_path
+      options[:path] ? options[:path] : default_assets_path
     end
 
     def default_assets_path

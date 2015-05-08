@@ -6,6 +6,8 @@ module NetguruBootstrapper
     include Thor::Actions
 
     desc "install", "Generate tree structure"
+    option :path
+
     def install
       say 'Generating tree structure...', :blue
       Generator.start(ARGV)
