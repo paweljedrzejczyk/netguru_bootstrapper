@@ -19,12 +19,16 @@ to your application's Gemfile as well. If you're not using Rails, add Bootstrap 
 
 ## Usage
 ```
-$ netguru_bootstrapper install --path "root/directory/path" --bootstrap-path "bootstrap"
+$ netguru_bootstrapper install
 ```
 
 ### Configuration
 + `path` - set root directory path (`app/assets/stylesheets` by default)
 + `bootstrap-path` - set Bootstrap GEM/package path (`bootstrap` by default)
+
+```
+$ netguru_bootstrapper install --path "root/directory/path" --bootstrap-path "bootstrap"
+```
 
 #### Non-Rails frameworks
 If you're not using Rails you'll probably need to edit [this line](https://github.com/netguru/netguru_bootstrapper/blob/master/lib/netguru_bootstrapper/templates/application.scss#L1). You can learn more about this at Bootstrap for Sass [wiki page](https://github.com/twbs/bootstrap-sass#installation).
