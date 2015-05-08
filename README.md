@@ -6,26 +6,28 @@ This gem bootstraps [Bootstrap](http://getbootstrap.com/) for Rails apps.
 
 ## Installation
 
-Add this line to your application's Gemfile:
+Run:
 ```
-gem 'netguru_bootstrapper'
-```
-
-And then execute:
-```
-$ bundle
+gem install netguru_bootstrapper
 ```
 
 Please note that this gem is designed to work with [Bootstrap for Sass](https://github.com/twbs/bootstrap-sass) gem, so you should add:
 ```
 gem 'bootstrap-sass'
 ```
-to your application's Gemfile as well.
+to your application's Gemfile as well. If you're not using Rails, add Bootstrap from different source that fits your application needs.
 
 ## Usage
 ```
-$ rails g netguru_bootstrapper:bootstrap
+$ netguru_bootstrapper install --path "root/directory/path" --bootstrap-path "bootstrap"
 ```
+
+### Configuration
++ `path` - set root directory path (`app/assets/stylesheets` by default)
++ `bootstrap-path` - set Bootstrap GEM/package path (`bootstrap` by default)
+
+#### Non-Rails frameworks
+If you're not using Rails you'll probably need to edit [this line](https://github.com/netguru/netguru_bootstrapper/blob/master/lib/netguru_bootstrapper/templates/application.scss#L1). You can learn more about this at Bootstrap for Sass [wiki page](https://github.com/twbs/bootstrap-sass#installation).
 
 ## Files organization
 
