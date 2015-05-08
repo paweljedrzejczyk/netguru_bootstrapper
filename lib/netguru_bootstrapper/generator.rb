@@ -5,7 +5,7 @@ module NetguruBootstrapper
   class Generator < Thor::Group
     include Thor::Actions
 
-    class_option :path
+    class_option :path, default: 'app/assets/stylesheets'
     class_option :bootstrap_path, default: 'bootstrap'
 
     def self.source_root
@@ -13,13 +13,13 @@ module NetguruBootstrapper
     end
 
     def create_root_file
-      say "Using #{base_path} as root directory", :blue
-      template 'application.scss', "#{base_path}/application.scss"
+      say "Using #{options[:path]} as root directory", :blue
+      template 'application.scss', "#{options[:path]}/application.scss"
     end
 
     def create_directories
       structure.directories.each do |dir|
-        empty_directory "#{base_path}/#{dir}"
+        empty_directory "#{options[:path]}/#{dir}"
         create_files(dir, structure.files[dir])
       end
     end
@@ -31,20 +31,12 @@ module NetguruBootstrapper
     end
 
     def create_files(dir, files)
-      return create_file "#{base_path}/#{dir}/.gitkeep" if files.nil?
+      return create_file "#{options[:path]}/#{dir}/.gitkeep" if files.nil?
       files.each { |file| copy_template(dir, file) }
     end
 
     def copy_template(dir, file)
-      template "#{dir}/#{file}.scss", "#{base_path}/#{dir}/#{file}.scss"
-    end
-
-    def base_path
-      options[:path] ? options[:path] : default_assets_path
-    end
-
-    def default_assets_path
-      'app/assets/stylesheets'
+      template "#{dir}/#{file}.scss", "#{options[:path]}/#{dir}/#{file}.scss"
     end
   end
 end
