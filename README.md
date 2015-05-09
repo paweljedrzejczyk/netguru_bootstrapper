@@ -81,6 +81,9 @@ $font-size-base: 16px;
 
 Similar to Boostrap Components - all overrides are commented out by default. After uncommenting an override you need to add proper file to <code>framework/overrides</code> directory.
 
+## [Changelog](https://github.com/netguru/netguru_bootstrapper/blob/master/CHANGELOG.md)
+You can find changelog [here](https://github.com/netguru/netguru_bootstrapper/blob/master/CHANGELOG.md).
+
 
 ## Contributing
 
