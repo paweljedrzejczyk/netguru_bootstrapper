@@ -2,7 +2,7 @@
 
 [![Gem Version](https://badge.fury.io/rb/netguru_bootstrapper.svg)](http://badge.fury.io/rb/netguru_bootstrapper)
 
-This gem bootstraps [Bootstrap](http://getbootstrap.com/) for Rails apps.
+This gem bootstraps [Bootstrap](http://getbootstrap.com/) for web apps.
 
 ## Installation
 
