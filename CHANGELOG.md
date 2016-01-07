@@ -1,5 +1,8 @@
 # Changelog
 
+## v0.0.6
++ synced Bootstrap variables with [bootstrap-sass](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) repo
+
 ## v0.0.5
 + added [Thor](https://github.com/erikhuda/thor) as CLI
 + added configurable root directory (`--path`) and Bootstrap (`--bootstrap-path`) paths
