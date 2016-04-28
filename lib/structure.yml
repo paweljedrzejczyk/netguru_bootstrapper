@@ -12,7 +12,10 @@ files:
   - _components
   - _overrides
   settings:
-  - _variables
+  - _color-variables
+  - _components-variables
+  - _typography-variables
+  - _views-variables
   - _z-index-variables
   - _breakpoint-variables
   utilities:
