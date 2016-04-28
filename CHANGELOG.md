@@ -1,5 +1,8 @@
 # Changelog
 
+## v1.0.0
++ updated variables structure
+
 ## v0.0.6
 + synced Bootstrap variables with [bootstrap-sass](https://github.com/twbs/bootstrap-sass/blob/master/assets/stylesheets/bootstrap/_variables.scss) repo
 

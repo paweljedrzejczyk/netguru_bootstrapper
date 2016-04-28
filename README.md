@@ -49,9 +49,12 @@ If you're not using Rails you'll probably need to edit [this line](https://githu
 │   └── overrides
 │       └── _framework-overrides-go-here.scss
 ├── settings
-│   ├── _z-index-variables.scss
 │   ├── _breakpoint-variables.scss
-│   └── _variables.scss
+│   ├── _color-variables.scss
+│   ├── _components-variables.scss
+│   ├── _typography-variables.scss
+│   ├── _views-variables.scss
+│   └── _z-index-variables.scss
 └── utilities
     ├── _functions.scss
     ├── _mixins.scss
