@@ -1,4 +1,6 @@
 # Changelog
+## v1.0.0
++ add missing files to structure description
 
 ## v1.0.0
 + updated variables structure
