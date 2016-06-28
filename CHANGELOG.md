@@ -1,4 +1,7 @@
 # Changelog
+## v1.1.0
++ add new sizing mixins: `min-sizing` and `max-sizing`
+
 ## v1.0.1
 + add missing files to structure description
 
