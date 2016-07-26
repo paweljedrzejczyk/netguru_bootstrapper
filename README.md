@@ -4,6 +4,14 @@
 
 This gem bootstraps [Bootstrap](http://getbootstrap.com/) for web apps.
 
+## Table of Contents
+1. [Installation](#installation)
+2. [Usage](#usage)
+3. [Files organization](#files-organization)
+4. [Mixins](#mixins)
+5. [Changelog](#changelog)
+6. [Contributing](#contributing)
+
 ## Installation
 
 Run:
@@ -84,9 +92,75 @@ $font-size-base: 16px;
 
 Similar to Boostrap Components - all overrides are commented out by default. After uncommenting an override you need to add proper file to <code>framework/overrides</code> directory.
 
+## Mixins
+This addon provides following useful mixins out of the box:
+
+### `absolute`, `fixed`, `relative`
+This mixins allows you to position an element with just one line of
+code.
+
+**Arguments**: List of positions in form of `[direction] [value]`, for example `top
+10px`
+
+**Usage**:
+```scss
+@include absolute(top 10px left 10px right 20px bottom 20px)
+@include relative(top 10px left 10px right 20px bottom 20px)
+@include fixed(top 10px left 10px right 20px bottom 20px)
+```
+### `sizing`
+Allows you to declare sizing for an element in a `width height` format.
+
+**Arguments**: List of dimensions, where the first element determines width and
+the second height (in case of only one element it gets set as width and height)
+
+**Usage**:
+```scss
+/* will set width to 100px and height to 90px */
+@include sizing(100px 90px)
+/* will set width and height to 100px */
+@include sizing(100px)
+```
+### `min-sizing`
+The same as `sizing` but sets `min-width` and `min-height`.
+
+**Arguments**: List of dimensions, where the first element determines width and
+the second height (in case of only one element it gets set as width and height)
+
+**Usage**:
+```scss
+/* will set min-width to 100px and min-height to 90px */
+@include min-sizing(100px 90px)
+/* will set width and height to 100px */
+@include min-sizing(100px)
+```
+### `max-sizing`
+The same as `sizing` but sets `max-width` and `max-height`.
+
+**Arguments**: List of dimensions, where the first element determines width and
+the second height (in case of only one element it gets set as width and height)
+
+**Usage**:
+```scss
+/* will set max-width to 100px and max-height to 90px */
+@include max-sizing(100px 90px)
+/* will set max-width and max-height to 100px */
+@include max-sizing(100px)
+```
+### `circle`
+Forces the element to have certain dimensions and gives it a rounded border
+effectively creating a circle.
+
+**Arguments**: Element sizing, will set the `width` and `height` to the given
+value.
+
+**Usage:**
+```scss
+@include circle(50px)
+```
+
 ## [Changelog](https://github.com/netguru/netguru_bootstrapper/blob/master/CHANGELOG.md)
 You can find changelog [here](https://github.com/netguru/netguru_bootstrapper/blob/master/CHANGELOG.md).
-
 
 ## Contributing
 
