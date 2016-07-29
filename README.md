@@ -96,7 +96,7 @@ Similar to Boostrap Components - all overrides are commented out by default. Aft
 This addon provides following useful mixins out of the box:
 
 ### `absolute`, `fixed`, `relative`
-This mixins allows you to position an element with just one line of
+These mixins allows you to position an element with just one line of
 code.
 
 **Arguments**: List of positions in form of `[direction] [value]`, for example `top
@@ -112,7 +112,7 @@ code.
 Allows you to declare sizing for an element in a `width height` format.
 
 **Arguments**: List of dimensions, where the first element determines width and
-the second height (in case of only one element it gets set as width and height)
+the second height (in case of only one argument it gets set as width and height)
 
 **Usage**:
 ```scss
@@ -125,7 +125,7 @@ the second height (in case of only one element it gets set as width and height)
 The same as `sizing` but sets `min-width` and `min-height`.
 
 **Arguments**: List of dimensions, where the first element determines width and
-the second height (in case of only one element it gets set as width and height)
+the second height (in case of only one argument it gets set as width and height)
 
 **Usage**:
 ```scss
@@ -138,7 +138,7 @@ the second height (in case of only one element it gets set as width and height)
 The same as `sizing` but sets `max-width` and `max-height`.
 
 **Arguments**: List of dimensions, where the first element determines width and
-the second height (in case of only one element it gets set as width and height)
+the second height (in case of only one argument it gets set as width and height)
 
 **Usage**:
 ```scss
@@ -156,6 +156,7 @@ value.
 
 **Usage:**
 ```scss
+/* will set width and height to 50px and border radius to 50% */
 @include circle(50px)
 ```
 
