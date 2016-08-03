@@ -9,8 +9,9 @@ This gem bootstraps [Bootstrap](http://getbootstrap.com/) for web apps.
 2. [Usage](#usage)
 3. [Files organization](#files-organization)
 4. [Mixins](#mixins)
-5. [Changelog](#changelog)
-6. [Contributing](#contributing)
+5. [Helpers](#helpers)
+6. [Changelog](#changelog)
+7. [Contributing](#contributing)
 
 ## Installation
 
@@ -158,6 +159,39 @@ value.
 ```scss
 /* will set width and height to 50px and border radius to 50% */
 @include circle(50px)
+```
+
+## Helpers
+This addon provides following CSS helpers which are useful in some scenarios:
+
+### `u-align-middle`, `u-align-top`, `u-align-bottom`
+These helpers allows you to vertically position an element with just one CSS class.
+
+**Usage**:
+```html
+<span class="u-align-middle"></span>
+<span class="u-align-top"></span>
+<span class="u-align-bottom"></span>
+```
+
+### `u-inline-block`, `u-block`, `u-inline`
+These helpers allows you to change the display attribute of an element with just
+one CSS class.
+
+**Usage**:
+```html
+<p class="u-inline-block"></p>
+<span class="u-block"></span>
+<div class="u-inline"></div>
+```
+
+### `u-relative`
+These helper allows you to change the position of an element to be relative with
+just one CSS class.
+
+**Usage**:
+```html
+<div class="u-relative"></div>
 ```
 
 ## [Changelog](https://github.com/netguru/netguru_bootstrapper/blob/master/CHANGELOG.md)
