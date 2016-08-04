@@ -174,24 +174,27 @@ These helpers allows you to vertically position an element with just one CSS cla
 <span class="u-align-bottom"></span>
 ```
 
-### `u-inline-block`, `u-block`, `u-inline`
+### `u-display-inline-block`, `u-display-block`, `u-display-inline`, `u-display-flex`
 These helpers allows you to change the display attribute of an element with just
 one CSS class.
 
 **Usage**:
 ```html
-<p class="u-inline-block"></p>
-<span class="u-block"></span>
-<div class="u-inline"></div>
+<p class="u-display-inline-block"></p>
+<span class="u-display-block"></span>
+<div class="u-display-inline"></div>
+<div class="u-display-flex"></div>
 ```
 
-### `u-relative`
-These helper allows you to change the position of an element to be relative with
-just one CSS class.
+### `u-position-relative`, `u-position-absolute`, `u-position-fixed`
+These helper allows you to change the position of an element with just
+one CSS class.
 
 **Usage**:
 ```html
-<div class="u-relative"></div>
+<div class="u-position-relative"></div>
+<div class="u-position-absolute"></div>
+<div class="u-position-fixed"></div>
 ```
 
 ## [Changelog](https://github.com/netguru/netguru_bootstrapper/blob/master/CHANGELOG.md)
