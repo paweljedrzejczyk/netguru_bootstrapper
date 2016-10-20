@@ -68,7 +68,8 @@ If you're not using Rails you'll probably need to edit [this line](https://githu
     ├── _functions.scss
     ├── _mixins.scss
     ├── _shared.scss
-    └── _typography.scss
+    ├── _typography.scss
+    └── _helpers.scss
 ```
 
 ### Important files
