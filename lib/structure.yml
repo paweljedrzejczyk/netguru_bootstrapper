@@ -23,3 +23,4 @@ files:
   - _mixins
   - _shared
   - _typography
+  - _helpers
